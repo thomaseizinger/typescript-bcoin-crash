@@ -1,10 +1,10 @@
-import {HDPrivateKey} from "bcoin";
+import bcoin from "bcoin";
 
 describe('import bcoin as javascript module', function () {
     it('should allow to use the code', function () {
 
-        let key = HDPrivateKey.generate();
+        let lockFlags = bcoin.blockchain.common.lockFlags;
 
-        expect(key).not.toBeUndefined();
+        expect(lockFlags.MANDATORY_LOCKTIME_FLAGS).toEqual(0);
     });
 });

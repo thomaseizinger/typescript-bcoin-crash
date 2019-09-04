@@ -62,6 +62,6 @@
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
   },
   "include": [
-    "node_modules/bcoin/lib/**/*.js"
+    "node_modules/bcoin/lib/blockchain/common.js"
   ]
 }
